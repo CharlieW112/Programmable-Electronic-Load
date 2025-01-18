@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * Z:\Projects\Programmable_Electronic_Load\LTSpice\Test Setups\MJ15024 Tester\MJ15024_Tester.asc
+Start Time: Sat Jan 18 01:19:37 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+v1: Missing value, assumed 0V @ DC
+Total elapsed time: 0.587 seconds.
+
