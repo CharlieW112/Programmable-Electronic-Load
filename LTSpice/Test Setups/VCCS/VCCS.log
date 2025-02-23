@@ -1,11 +1,11 @@
 LTspice 24.0.12 for Windows
 Circuit: * Z:\Projects\Programmable_Electronic_Load\LTSpice\Test Setups\VCCS\VCCS.asc
-Start Time: Fri Jan 17 14:34:12 2025
+Start Time: Thu Jan 23 22:08:33 2025
 solver = Normal
 Maximum thread count: 16
 tnom = 27
 temp = 27
 method = modified trap
 v1: Missing value, assumed 0V @ DC
-Total elapsed time: 0.434 seconds.
+Total elapsed time: 0.454 seconds.
 

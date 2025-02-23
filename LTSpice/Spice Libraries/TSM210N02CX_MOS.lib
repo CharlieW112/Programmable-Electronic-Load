@@ -1,0 +1,35 @@
+*******************************************************
+* Taiwan Semiconductor
+* TSM210N02CX_MOS
+* N-Channel 20V (D-S) Power MOSFET
+* Date: 2023-03-23
+*******************************************************
+.SUBCKT TSM210N02CX_MOS D G S 
+**+params:  EP= {EP} 
+M1 3 GX S S NMOS W= 1177895u L= 0.25u 
+M2 S GX S D PMOS W= 1177895u L= 0.24u
+R1 D 3 17.23m TC= 32e-4 8u
+CGS GX S 660p
+CGD GX D 45p
+RG G GY 1
+RTCV 100 S 1.0e6 TC=-4.4m 1.0u
+ETCV GX GY 100 200 1 
+ITCV S 100 1u 
+VTCV 200 S 1 
+DBD S D DBD  
+**************************************************************** 
+.MODEL NMOS NMOS ( LEVEL = 3 TOX = 4.0e-8
++ RS = 0 KP = 7.85e-5  NSUB = 14e+16  THETA= 0.5 VTO= 1.75
++ KAPPA = 1e-1 NFS = 8.0e+11 Rds=15e+9 
++ LD = 0 IS = 0 TPG = 1  ) 
+*************************************************************** 
+.MODEL PMOS PMOS ( LEVEL = 3 TOX = 4.0e-8  
++NSUB = 1e+15 IS = 0 TPG = -1 ) 
+**************************************************************** 
+.MODEL DBD D ( 
++FC = 0.1 TT = 22.0e-9 T_MEASURED = 25 BV = 23.49 IBV=250u TBV1=700e-6 TBV2=-0.96u
++RS = 2.2m N = 1.084e+00 IS = 6.8e-12
++EG = 1.149 XTI = 1.026e+00 TRS1 = 2.410e-03 
++CJO = 300p VJ = 1.4 M = 0.50 ) 
+****************************************************************
+.ENDS
