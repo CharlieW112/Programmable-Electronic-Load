@@ -1,0 +1,47 @@
+LTspice 24.1.5 for Windows
+Circuit: Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\PDCL V1.net
+Start Time: Mon Mar 31 20:11:21 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+C3: Increased Cpar to 6.81e-16
+C5: Increased Cpar to 1e-13
+C6: Increased Cpar to 1e-13
+C8: Increased Cpar to 1e-13
+C10: Increased Cpar to 6.81e-16
+C11: Increased Cpar to 6.81e-16
+C12: Increased Cpar to 1e-13
+C17: Increased Cpar to 1e-16
+C18: Increased Cpar to 1e-16
+C23: Increased Cpar to 1e-13
+C14: Increased Cpar to 1e-13
+C16: Increased Cpar to 1e-13
+C19: Increased Cpar to 1e-11
+C20: Increased Cpar to 1e-11
+C21: Increased Cpar to 1e-11
+C22: Increased Cpar to 1e-11
+C25: Increased Cpar to 1e-13
+C27: Increased Cpar to 1e-13
+WARNING: Node ur_+5.5v is floating.
+WARNING: Node ur_+12v is floating.
+WARNING: Node ur_-12v is floating.
+
+Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\PDCL V1.net(8): Missing value, assuming 0V @ DC.
+
+V1 VCCS_IN 0
+^^^^^^^^^^^^
+.step 
+Total elapsed time: 1.097 seconds.
+
+Files loaded:
+Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\PDCL V1.net
+C:\Users\charl\AppData\Local\LTspice\lib\cmp\standard.bjt
+Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\MJ15024.LIB
+Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\dummy_ldo.lib
+Y:\Projects\Programmable_Electronic_Load\LTSpice\Test Setups\VCCS V2\irlz44n.spi
+Y:\Projects\Programmable_Electronic_Load\LTSpice\Test Setups\VCCS V2\lm358.txt
+Y:\Projects\Programmable_Electronic_Load\LTSpice\Test Setups\VCCS V2\OPAx197.LIB
+Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\SSA2_CUSTOM.lib
+

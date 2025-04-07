@@ -1,0 +1,26 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -48 -80 80 48
+WINDOW 0 -48 -79 Bottom 2
+WINDOW 3 -47 47 Top 1
+SYMATTR Value SSA2_250
+SYMATTR Prefix X
+SYMATTR ModelFile Y:\Projects\Programmable_Electronic_Load\LTSpice\V1\SSA2_CUSTOM.lib
+PIN 16 -80 VRIGHT 8
+PINATTR PinName +
+PINATTR SpiceOrder 1
+PIN 16 48 VLEFT 8
+PINATTR PinName -
+PINATTR SpiceOrder 2
+PIN -48 -32 LEFT 8
+PINATTR PinName +VO
+PINATTR SpiceOrder 3
+PIN -48 0 LEFT 8
+PINATTR PinName -VO
+PINATTR SpiceOrder 4
+PIN 80 -32 RIGHT 8
+PINATTR PinName VCC
+PINATTR SpiceOrder 5
+PIN 80 0 RIGHT 8
+PINATTR PinName GND
+PINATTR SpiceOrder 6

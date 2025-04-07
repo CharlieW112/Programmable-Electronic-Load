@@ -1,0 +1,11 @@
+* AZ822-2C-5DSE Relay Model
+.model AZ822Relay SW(Ron=0.05 Roff=1Meg Vt=3.5 Vh=0.5)
+
+* Define a behavioral switch activation function
+Bcoil N001 0 V=V(coil,0) 
+
+* Coil with proper resistance
+Lcoil coil 0 10mH Rser=178
+
+* AZ822-2C-5DSE Relay Model
+.model AZ822Relay SW(Ron=0.05 Roff=1Meg Vt=3.5 Vh=0.5)

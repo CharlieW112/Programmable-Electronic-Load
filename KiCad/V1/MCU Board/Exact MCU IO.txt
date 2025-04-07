@@ -1,0 +1,167 @@
+NRST (100nF to GND) -> PBTN -> DGND ✓
+VDD -> 1KR -> LED -> DGND ✓
+
+3.3V -> VDD
+5V -> LDO -> 3.3V -> VDDA ✓
+VCAP -> 1uF to DGND
+VDD33_USB			:	VDD (100nF to DGND)
+VDDMMC				:	VDD (100nF to DGND)
+
+VREF (MCP1501 SOT-23-6): ✓
+	OUT			:	VREF (10R 0.1uF filter if necessary)
+	GND			:	AGND
+	VDD			:	VDD
+	SHDN			:	VDD
+
+BOOT0				:	10KR -> DGND 
+PDR_ON				:	VDD
+
+GPIO:
+      IN:
+	MATC0			:	PB12 (10KR to VDD) ✓ 
+	MATC1			:	PB13 (10KR to VDD) ✓
+	MATC2			:	PB14 (10KR to VDD) ✓
+	MATC3			:	PB15 (10KR to VDD) ✓
+	FRONT_SW		:	PD8 ✓
+	I_SENSE_EN		:	PF7 ✓
+	WARNING_HV		:	PF5
+	
+      OUT: ✓
+	STATUS_LED		:	PC13 -> 1KR -> R LED -> DGND ✓
+	ERROR_LED		:	PE6  -> 1KR -> G LED -> DGND ✓
+	SSR_EN			:	PD9 -> 1KR -> (10K to DGND) AO3400 -> SSR ✓
+	PWM0			:	PD12 ✓
+	PWM1			:	PD13 ✓
+	PWM_BUZZER		:	PA10
+	MATR0			:	PD10 ✓
+	MATR1			:	PD11 ✓
+	MATR2			:	PD14 ✓
+	MATR3			:	PD15 ✓
+	MUXA			:	PG2 ✓
+	MUXB			:	PG3 ✓
+	MUXC			:	PG7 ✓
+
+
+
+      IN/OUT: ✓
+	GPIO0_UNUSED		:	PE1 ✓
+	GPIO1_UNUSED		:	PE0 ✓
+	GPIO2_UNUSED		:	PB9 ✓
+	GPIO3_UNUSED		:	PB8 ✓
+	GPIO4_UNUSED		:	PB7 ✓
+	GPIO5_UNUSED		:	PB6 ✓
+	GPIO6_UNUSED		:	PG15 ✓
+	GPIO7_UNUSED		:	PG14 ✓
+	GPIO8_UNUSED		:	PG13 ✓
+	GPIO9_UNUSED		:	PG12 ✓
+	GPIO10_UNUSED		:	PG10 ✓
+	GPIO11_UNUSED		:	PD7 ✓
+	GPIO12_UNUSED		:	PD6 ✓
+	GPIO13_UNUSED		:	PD5 ✓
+	GPIO14_UNUSED		:	PD4 ✓
+	GPIO15_UNUSED		:	PD0 ✓
+
+      ADC: ✓
+	DIFF+			:	PF11 (33R, 100pF to DIFF-, 100pF to AGND) ✓
+	DIFF-			:	PF12 (33R, 100pF to DIFF+, 100pF to AGND) ✓
+	
+	I_SENSE_FINE		:	PA2 (49.9R, 100nF to AGND) ✓	
+	I_SENSE_COARSE		:	PB1 (49.9R, 100nF to AGND) ✓
+	V_SENSE			:	PF13 (49.9R, 100nF to AGND) ✓
+	VCCS_SENSE		:	PC4 (49.9R, 100nF to AGND) ✓
+	ADC0_UNUSED		:	PA7 (49.9R, 100nF to AGND) ✓
+	ADC1_UNUSED		:	PC5 (49.9R, 100nF to AGND) ✓
+	ADC2_UNUSED		:	PB0 (49.9R, 100nF to AGND) ✓
+	
+	MUX_TH0 (0-7)		:	PA1 (33R, 10nF to DGND) ✓
+	MUX_TH1	(8-15)		:	PA0 (33R, 10nF to DGND) ✓
+	DTH2			:	PF14 (33R, 10nF to DGND) ✓
+	DTH3			:	PA3 (33R, 10nF to DGND) ✓
+
+      
+      DAC: ✓
+	VCCS_IN			:	PA4 (100R, 100nF to AGND) ✓
+	DAC1_UNUSED		:	PA5 (100R, 100nF to AGND) ✓
+	DAC2_UNUSED		:	PA6 (100R, 100nF to AGND) ✓
+	
+      Encoder: ✓
+	A			:	PG4 (10KR to VDD) ✓
+	B			:	PG5 (10KR to VDD) ✓
+	SW			:	PG6 (10KR to VDD, 100nF to DGND) ✓
+	VCC			:	VDD ✓
+	GND			:	DGND ✓
+
+USB: ✓
+	DP			:	PA12
+	DM			:	PA11
+	VBUS			:	PA9 !!!10K / 20K DIVIDER!!!
+	GND			:	DGND
+
+Micro SD Card: ✓
+	CS			:	PE13
+	MOSI			:	PE14
+	SCK			:	PE12
+	MISO			:	PE5
+	CARD_DETECT		:	PE10 (10KR to VDD)
+	VDD			:	VDD
+	GND			:	DGND
+
+ST-Link: ✓
+	3V3			:	VDD ✓
+	SWDIO			:	PA13 ✓
+	SWCLK			:	PA14 ✓
+	GND			:	DGND ✓
+	SWO			:	PB3 ✓
+	NRST			:	NRST ✓
+	TXD			:	PB10 (USART3) ✓
+	RXD			:	PB11 (USART3) ✓
+	GND			:	DGND ✓
+	5V			:	NC
+
+
+LCD TFT: ✓
+	DISPL_CS		:	PB4
+	DISPL_RST		:	PD1
+	DISPL_SCK / TOUCH_SCK	:	PG11
+	DISPL_MOSI		:	PB5
+	TOUCH_MISO		:	PG9
+	TOUCH_CS		:	PC10
+	TOUCH_INT		:	PC11 (10KR to VDD)
+	DISPL_DC		:	PC12
+	DISPL_LED		:	PC6 (100R)
+	VCC			:	VDD
+	GND			:	DGND
+
+
+QSPI Flash: ✓
+
+	/CS			:	PE11
+	DO (IO1)		:	PF9
+	/WP (IO2)		:	PE2
+	GND			:	DGND
+	DI (IO0)		:	PF8
+	CLK			:	PF10
+	/HOLD or /RESET (IO3)	:	PF6
+	VCC			:	VDD
+
+SPI Ethernet (USR-ES1): ✓
+	GND			:	DGND
+	VIN3.3			:	VDD
+	MOSI			:	PC1
+	SCK			:	PD3
+	nSS (CS)		:	PC0
+	nINT			:	PD2 (10KR to VDD)
+	MISO			:	PC2_C
+	nRESET			:	PC3_C (10KR to VDD)
+	PWDWN			:	NC
+
+Oscillators: ✓
+      25MHz:
+ 	EN			:	VDD
+ 	GND			:	DGND
+ 	OUT			:	PH0
+ 	VCC			:	VDD
+
+      32.768kHz:
+ 	A			:	PC14 (10pF to AGND)
+ 	B			:	PC15 (10pF to AGND)

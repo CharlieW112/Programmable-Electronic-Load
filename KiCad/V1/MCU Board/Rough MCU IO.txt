@@ -1,0 +1,31 @@
+- 3.3V for VDD ✅
+- LDO for VDDA ✅
+- MCP1501 for VREF ✅
+- Split AGND/DGND ✅
+
+- ADC Differential Input ✅
+- ADC 10-100R Series Resistor, 100nF cap to AGND ✅
+
+- QSPI Flash (W25Q128JVPIQ) using OCTOSPI1 or OCTOSPI2 ✅
+- SPI: Ethernet & TFT / TFT Touch 
+- Pull-up on TOUCH_INT ✅
+
+- DAC1 : VCCS ✅
+- DAC2 : Unused ✅
+
+- 2x PWM Output Headers (2 Pin with GND) for future PWM capabilities for fans ✅
+
+- IO for Front Panel ✅
+
+- OSC_IN : 25MHz (COM1305-25.000-EXT-T-TR) ✅
+- RTC OSC : 32.768kHz (AB26T-32.768KHZ) ✅
+
+- Pushbutton for NRST to Reset (Pull-up + debounce 100nF) ✅
+- UART1 or UART3 for ST-Link ✅
+- ST-Link SWV ✅
+- USB OTG
+
+- LEDs:
+	- Power : Green ✅
+	- Heartbeat : Green ✅
+	- Error : Red ✅

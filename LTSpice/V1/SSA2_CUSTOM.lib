@@ -1,0 +1,28 @@
+* Riedon SSA2-250 Simplified SPICE Model
+* 5mV/A differential output, no shunt resistance
+* Pins: +I_IN -I_IN +V_OUT -V_OUT VCC GND
+
+.SUBCKT SSA2_250 1 2 3 4 5 6
+* Node 1 = +I_IN (load input)
+* Node 2 = -I_IN (load output)
+* Node 3 = +V_OUT (differential output +)
+* Node 4 = -V_OUT (differential output -)
+* Node 5 = VCC
+* Node 6 = GND
+
+* Zero-resistance shunt (ideal wire)
+RSHUNT 1 2 1u
+
+* Internal reference ground (VCC-referenced analog GND)
+* Tie sensing circuitry to GND
+RGND 6 0 1MEG
+
+* Sense current through shunt
+* Voltage-controlled voltage source, output = 0.005 * I(RSHUNT)
+EDIFF 3 4 VALUE = {0.005 * I(RSHUNT)}
+
+* Optional output impedance (for realism)
+ROUT1 3 6 1k
+ROUT2 4 6 1k
+
+.ENDS SSA2_250

@@ -1,0 +1,12 @@
+.SUBCKT AP7363 IN GND OUT
+* Dummy AP7363 model - does nothing
+* Pins: 1=IN, 2=GND, 3=OUT
+.ENDS AP7363
+.SUBCKT L78M IN GND OUT
+* Dummy L78M model - does nothing
+* Pins: 1=IN, 2=GND, 3=OUT
+.ENDS L78M
+.SUBCKT MIC69502 EN VIN VIN GND VOUT VOUT ADJ
+* Dummy MIC69502 model - does nothing
+* Pins: 1=EN, 2=VIN, 3=VIN, 4=GND, 5=VOUT, 6=VOUT, 7=ADJ
+.ENDS MIC69502
